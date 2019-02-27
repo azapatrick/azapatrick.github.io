@@ -20,17 +20,23 @@ div#navbar {
     background-color: rgba(0,0,31,5);
 }
 .navbar-default .navbar-nav>li>a{
-    color: #fff !important;
+    color: #ffff;
     font-weight: bold;
 }
-ul.nav.navbar-nav.navbar-right li:hover{
-    background-color: #fff;
+ul.nav.navbar-nav.navbar-right li a:hover{
+    color: #fff;
+}
+.navbar-right {
+    font-size: 15px;
 }
 
 /*background image*/
 .index-bg {
     background-image: url(img/bg_singleevents.png);  
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     height: 889px;
 }
 
@@ -247,7 +253,10 @@ ul#countdown li {
     -moz-box-shadow: 0px 0px 19px 0px rgba(219,219,219,1);
     box-shadow: 0px 0px 19px 0px rgba(219,219,219,1);
     /*margin: 0px 10px 0px 10px;*/
-    height: 207px;
+    /*height: 207px;*/
+}
+.testimonial_Card p {
+    padding: 20px;
 }
 .testimonial-area .col-lg-4{
     margin: 0px 18px 0px 18px;
@@ -257,3 +266,57 @@ ul#countdown li {
 .testimonial-area{
     margin-bottom: 267px;
 }
+
+.test_one img{
+    border-radius: 50%;
+    width: 150px;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial_title{
+    margin-bottom: 20px; 
+}
+
+/*footer*/
+.site-footer{
+    background-color: #00001f;
+    height: auto;
+}
+
+.site-footer p{
+    color: #FFF;
+}
+.footer-nav p{
+    color: #7e7e9d;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.footer-nav{
+    margin-top: 212px;
+}
+
+.footer-nav li a{
+    font-size: 18px;
+    font-family: "Product Sans";
+    text-decoration: none;
+    color: #fff;
+    line-height: 32.49px;
+}
+
+.footer-nav li a:hover{
+    color:#7e7e9d ;
+}
+.copyright{
+    color: #fff;
+}
+.footer-logo{
+    margin-top: 40px;
+}
+
+hr{
+    margin:0px;
+}
+
