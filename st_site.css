@@ -169,7 +169,7 @@ ul.nav.navbar-nav.navbar-right li a:hover{
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    height: 586px;
+    height: auto;
 }
 
 .action_button .left{
@@ -229,7 +229,7 @@ ul#countdown li {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    height: 586px;
+    height: auto;
 
 }
 .upcoming-col h1{
@@ -278,6 +278,13 @@ ul#countdown li {
 .testimonial_title{
     margin-bottom: 20px; 
 }
+p.testname {
+text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px 10px 0px 10px;
+}
 
 /*footer*/
 .site-footer{
@@ -295,11 +302,11 @@ ul#countdown li {
 }
 
 .footer-nav{
-    margin-top: 212px;
+    margin-top: 108px;
 }
 
 .footer-nav li a{
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Product Sans";
     text-decoration: none;
     color: #fff;
@@ -320,3 +327,204 @@ hr{
     margin:0px;
 }
 
+
+/*rotator*/
+* {
+  box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 12%;
+    padding: 5px;
+    margin-top: -96px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+
+/*slider override*/
+.ms-slide .ms-slide-bgcont, .ms-slide .ms-slide-bgvideocont{
+    overflow: visible !important; 
+}
+
+.ms-staff-carousel{
+    overflow: visible !important;    
+    margin: 110px auto !important;
+}
+
+
+/*sidebar*/
+.sidebar-bg{
+    background-image: url(img/sidebar-bg.png);  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.side-title h1{
+    text-align: right;
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    padding: 70px 50px 70px 0;
+}
+.col-lg-6.side-title {
+    border-right: 5px solid #fff;
+}
+
+.side-nav{
+    margin-top: 100px;
+}
+
+.side-nav li a{
+    font-size: 18px;
+    font-family: "Product Sans";
+    text-decoration: none;
+    color: #fff;
+    line-height: 32.49px;
+}
+
+.side-nav li a:hover{
+    color:#7e7e9d ;
+}
+.side-nav p{
+    color: #7e7e9d;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*media query*/
+@media (max-width: 1199px)
+{
+    .title-right h1{
+        text-align: center;
+    }
+    .title-right p{
+        text-align: center;
+    }
+    .title-left h1{
+        text-align: center;
+    }
+    .title-left p{
+        text-align: center;
+    }
+    .side-title h1{
+        text-align: center;
+        padding: 0px;
+    }
+    .side-title p{
+        text-align: center;
+    }
+    .col-lg-6.side-title{
+        border: none;
+    }
+    .sidebar-area{
+        display: inline-flex;
+    }
+    .side-nav{
+        margin-top: 10px;
+    }
+    .col-lg-4.testimonial_Card {
+        float: left;
+        margin: 15px;
+    }
+    .col-lg-6.site-col{
+        text-align: center;
+    }
+    ul#countdown{
+        width: 100%;
+        padding-left: 150px;
+    }
+    .footer-nav {
+        text-align: center;
+        display: block;
+    }
+    .col-md-6.copyright {
+        text-align: center;
+        width: 100%;
+    }
+    .action_button-col.right {
+        width: 100%;
+    }
+    .action_button-w-bg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 990px)
+{
+    ul#countdown {
+        width: 100%;
+        padding-left: 50px;
+    }
+    .col-lg-4.testimonial_Card {
+        float: left;
+        width: 100%;
+        margin: 20px 0px 60px 20px;
+    }
+}
+@media (max-width: 766px)
+{
+    ul#countdown {
+        width: 100%;
+        padding-left: 90px;
+    }
+    .footer-nav{
+        margin-top: 20px;
+    }
+    .col-lg-4.testimonial_Card {
+        margin: 20px 0px 60px 0px;
+    }
+    ul#countdown li span {
+        font-size: 60px;
+    }
+    ul#countdown li p {
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 717px){
+    ul#countdown li span {
+        font-size: 50px;
+    }
+    ul#countdown li p {
+        font-size: 10px;
+    }
+    ul#countdown {
+        width: 100%;
+        padding-left: 100px;
+    }
+    .slogan p{
+        font-size: 70px;
+        line-height: 30px;
+    }
+    .slogan span{
+        font-size: 25px;
+    }
+    .sidebar-area{
+        display: block;
+    }
+
+}
+@media (max-width: 675px){
+    ul#countdown {
+        display: none;
+    }
+}
