@@ -412,11 +412,12 @@ hr{
     font-weight: bold;
     font-size: 25px;
 }
+body { padding-top: 70px; }
 
 /*body*/
-html{
+/*html{
     overflow-x:hidden
-}
+}*/
 
 /*media query*/
 @media (max-width: 1199px)
