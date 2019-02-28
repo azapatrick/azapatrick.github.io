@@ -365,6 +365,9 @@ hr{
     overflow: visible !important;    
     margin: 110px auto !important;
 }
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+    margin-bottom: 26px;
+}
 
 
 /*sidebar*/
@@ -408,6 +411,11 @@ hr{
     color: #7e7e9d;
     font-weight: bold;
     font-size: 25px;
+}
+
+/*body*/
+html{
+    overflow-x:hidden
 }
 
 /*media query*/
@@ -478,6 +486,16 @@ hr{
         float: left;
         width: 100%;
         margin: 20px 0px 60px 20px;
+    }
+}
+@media (max-width: 783px)
+{
+    .navbar-nav{
+        text-align: center;
+    }
+    ul.nav.navbar-nav.navbar-right li a:hover{
+        background-color: #fff;
+        color: #00001f;
     }
 }
 @media (max-width: 766px)
