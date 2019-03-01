@@ -18,6 +18,7 @@
     <script src="https://getbootstrap.com/docs/3.3/assets/js/ie-emulation-modes-warning.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/masterslider.css">
+    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">  
     <link rel="stylesheet" type="text/css" href="css/ms-staff-style.css">   
 
 
@@ -75,25 +76,24 @@
   <!-- Above the fold Ends -->
 
   <div class="container site-col">
-    <div class="col-lg-6">
-
-      <!-- template -->
-      <div class="ms-staff-carousel">
-        <!-- masterslider -->
-        <div class="master-slider" id="masterslider">
-            <div class="ms-slide">
-                <img src="../masterslider/style/blank.gif" data-src="img/women-1.jpg" alt="lorem ipsum dolor sit"/>     
+    <div class="col-lg-6 slider-rotate">
+      <!-- MasterSlider -->
+        <div id="P_masterslider" class="master-slider-parent ms-staff-carousel ms-parent-id-52" style="max-width:1000px;" >
+            <!-- MasterSlider Main -->
+            <div id="masterslider" class="master-slider ms-skin-default" >
+                <div class="ms-slide" data-delay="3" data-fill-mode="fill" >
+                    <img src="img/blank.gif" alt="" title="" data-src="img/women-1.jpg" />
+                </div>
+                <div class="ms-slide" data-delay="3" data-fill-mode="fill" >
+                    <img src="img/blank.gif" alt="" title="" data-src="img/women-2.jpg" />
+                </div>
+                <div class="ms-slide" data-delay="3" data-fill-mode="fill" >
+                    <img src="img/blank.gif" alt="" title="" data-src="img/women-3.jpg" />
+                </div>
             </div>
-            <div class="ms-slide">
-                <img src="../masterslider/style/blank.gif" data-src="img/women-2.jpg" alt="lorem ipsum dolor sit"/>     
-            </div>
-            <div class="ms-slide">
-                <img src="../masterslider/style/blank.gif" data-src="img/women-3.jpg" alt="lorem ipsum dolor sit"/>     
-            </div>
+            <!-- END MasterSlider Main -->
         </div>
-        <!-- end of masterslider -->
-      </div>
-      <!-- end of template -->
+        <!-- END MasterSlider -->
 
     </div>
     <div class="col-lg-6 title-right">
@@ -360,7 +360,8 @@
     <script src="jscripts/masterslider/jquery.min.js"></script>
     <script src="jscripts/masterslider/masterslider.min.js"></script>
     <script type="text/javascript" src="jscripts/coundown-timer.js"></script>
-    <script type="text/javascript">   
+    <script type="text/javascript" src="jscripts/jquery-2.2.4.min.js"></script>
+<!--     <script type="text/javascript">   
       var slider = new MasterSlider();
       slider.setup('masterslider' , {
         loop:true,
@@ -375,7 +376,50 @@
       slider.control('arrows');
       slider.control('slideinfo',{insertTo:'#staff-info'});
 
-    </script>
+    </script> -->
+       <script>
+          var masterslider = new MasterSlider();
+
+      // slider controls
+      masterslider.control('arrows'     ,{ autohide:true, overVideo:true  });
+      masterslider.control('slideinfo'  ,{ autohide:false, overVideo:true, dir:'h', align:'bottom',inset:false , margin:10   });
+      // slider setup
+      masterslider.setup("masterslider", {
+        width           : 240,
+        height          : 240,
+        minHeight       : 0,
+        space           : 0,
+        start           : 1,
+        grabCursor      : true,
+        swipe           : true,
+        mouse           : true,
+        keyboard        : false,
+        layout          : "partialview",
+        wheel           : true,
+        autoplay        : false,
+        instantStartLayers:false,
+        loop            : true,
+        shuffle         : false,
+        preload         : 4,
+        heightLimit     : true,
+        autoHeight      : false,
+        smoothHeight    : true,
+        endPause        : false,
+        overPause       : true,
+        fillMode        : "fill",
+        centerControls  : true,
+        startOnAppear   : false,
+        layersMode      : "center",
+        autofillTarget  : "",
+        hideLayers      : false,
+        fullscreenMargin: 0,
+        speed           : 20,
+        dir             : "h",
+        parallaxMode    : 'swipe',
+        view            : "flow"
+      });
+
+          </script>
     <script type="text/javascript">
             //Countdown js
          $("#countdown").countdown({
