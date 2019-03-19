@@ -10087,6 +10087,15 @@ border-radius: 5px 0px 0px 5px;
     background-size: cover;
     background-attachment: fixed;
     height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-logo{
+    margin: 100px 0px 100px 0px;
+}
+.contact-info{
+    text-align: center;
+    margin: 100px 0px 100px 0px;
 }
 /* === CONTACT ENDS === */
 
