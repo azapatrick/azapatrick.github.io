@@ -10079,3 +10079,15 @@ border-radius: 5px 0px 0px 5px;
 }
 /* === CONTENT ENDS === */
 
+/* === CONTACT  === */
+.upcoming-bg {
+    background-image: url(img/bg-contact.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+/* === CONTACT ENDS === */
+
+
