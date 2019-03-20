@@ -1,5 +1,5 @@
-/*BOOTSTRAP*/     
-html {
+/*BOOTSTRAP*/      
+html { 
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
@@ -9954,7 +9954,7 @@ html{
 /*=== BACKGROUND BANNER ===*/
 
 .bg-Slides{
-    background-image: url(image/bg-cyan.jpg);
+    background-image: url(../image/bg-cyan.jpg);
 /*    background-image: url(image/bg-watermelon.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -9962,7 +9962,7 @@ html{
 }
 .bg-Slides-2{
 /*    background-image: url(image/bg-cyan.jpg);*/
-    background-image: url(image/bg-watermelon.jpg);
+    background-image: url(../image/bg-watermelon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 528px;
@@ -10029,31 +10029,37 @@ html{
 
 /*=== SIDE BAR ===*/
 .newest-women-btn{
-    background-color: #0d4a5e;
+    background-color: #19bbbd;
     color: #fff;
-    border-color: #0d4a5e;
+    border-color: #19bbbd;
     width: 100%;
     height: 45px;
     border-radius: 3px;
     font-size: 16px;
     padding: 0;
     margin-bottom: 10px; 
+    border-style: solid;
 }
 .container .site-container a.list-group-item.active {
-    background: #19bbbd !important;
+    background: #136c8c !important;
     color: #fff;
     text-shadow: none;
-    border-color: #19bbbd;
     font-size: 14px;
     font-weight: bold;
+    border: none;
+    padding: 15px;
 }
 .container .site-container a.list-group-item {
     background: #fff !important;
-    color: #19bbbd;
+    color: #136c8c;
     text-shadow: none;
-    border-color: #19bbbd;
+    border-color: #136c8c;
     font-size: 14px;
     font-weight: bold;
+}
+.container .site-container a.hovereffect:hover{
+    background-color: #125469 !important;
+    color: #fff;
 }
 .tour-sched{
     color: #fff;
@@ -10063,13 +10069,23 @@ background: #0c4254;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #126581, #0c4254);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to top, #126581, #0c4254); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 border-radius: 5px 0px 0px 5px; 
+padding: 15px;
 }
+.sidebar button:hover{
+    background-color: #125469;
+}
+.sidebar a{
+    color: #fff;
+}
+
 /*=== SIDE BAR ENDS===*/
 
 /* === CONTENT === */
-.site-content{
-    border: 2px solid #0c4254;
+.site-content {
+    border: 1px solid #19bbbd;
+    border-left: 0;
     border-radius: 0px 5px 5px 0px;
+    margin-left: -1px;
 }
 .news-area{
     background-color: #19bbbd; 
@@ -10081,7 +10097,7 @@ border-radius: 5px 0px 0px 5px;
 
 /* === CONTACT  === */
 .upcoming-bg {
-    background-image: url(image/bg-contact.jpg);
+    background-image: url(../image/bg-contact.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -10099,4 +10115,94 @@ border-radius: 5px 0px 0px 5px;
 }
 /* === CONTACT ENDS === */
 
+/* === CONTENT IMAGES === */
+img.figure-img.img-fluid.rounded.img-thumbnail {
+    width: 400px;
+    float: right;
+}
 
+.pull-right figcaption {
+    background-color: #ebebeb;
+    margin-top: 275px;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+}
+/* === CONTENT IMAGES ENDS*/
+
+/* === FOOTER ====*/
+.footer-bg{
+    background-image: linear-gradient(to bottom, #0c4254 0, #0c4254 100%);
+    padding: 42px 0px 42px 0px;
+}
+.container.footer-nav ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+.container.footer-nav li {
+    padding: 0px 5px 0px 5px;
+    font-size: 12px;
+}
+.container.footer-nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container.footer-nav li a:hover{
+    color: #19bbbd;
+}
+
+.some-footer{
+    border-right: 1px solid #fff;
+}
+/* === FOOTER ENDS ====*/
+
+/* === SOCIAL MEDIA ===*/
+.container-fluid.social-media-footer{
+    background-color: #022731;
+}
+.container.social-details {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 33px; 
+}
+
+.social-details i{
+    margin: 0px 5px 0px 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.social-details i:hover{
+    color: #19bbbd ;
+}
+/* === SOCIAL MEDIA ENDS ===*/
+
+/* === COPYRIGHT === */
+.copyright{
+    text-align: center;
+    color: #fff;
+    margin-top: 40px; 
+}
+/* === COPYRIGHT ENDS === */
+
+/* === MEDIALOGOS === */
+.medialogos {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.active:before {
+    display: none;
+}
+.active {
+    background: none !important;
+}
+.medialogos img {
+    padding-left: 15px;
+}
+/* === MEDIALOGOS ENDS === */
+
+/* === CONTACT NUMBER === */
+.cnumber img{
+   filter: brightness(5);
+}
+/* === CONTACT NUMBER ENDS === */
