@@ -10141,7 +10141,7 @@ img.figure-img.img-fluid.rounded.img-thumbnail {
 /* === FOOTER ====*/
 .footer-bg{
     background-image: linear-gradient(to bottom, #0c4254 0, #0c4254 100%);
-    padding: 42px 0px 42px 0px;
+    padding: 40px 0px 40px 0px;
 }
 .container.footer-nav ul {
     list-style-type: none;
