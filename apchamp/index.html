@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-language" content="en-us"/>
+   <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://getbootstrap.com/docs/3.3/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://getbootstrap.com/docs/3.3/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/masterslider.css">
+    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">  
+    <link rel="stylesheet" type="text/css" href="css/ms-staff-style.css">  
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Apchamp Blogs | Home Page </title>
+</head>
+<body>
+
+	    <nav class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#"><img src="img/apchamp-logo.png">
+	          </a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	            <li><a href="#">Home</a></li>
+	            <li><a href="#">Travel</a></li>
+	            <li><a href="#">Food</a></li>
+	            <li><a href="#">Fashion</a></li>
+	            <li><a href="#">About Me</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+
+	<div class="header-banner">	 
+		<div class="container">
+			<div class="col-md-6 slogan">
+				<p>Hi I'm <br><span>Apple Jane!</span></p>
+				<div class="square"></div>
+				<button class="read-button"> Read My Blog </button>
+			</div>
+			<div class="col-md-6 caricature">
+				<img src="img/caricature.png" alt="Apchamp Blogs">
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg-content">
+		<div class="container">
+			<div class="blog">
+				<h1>blogs</h1>
+				<div class="square-h1"></div>
+			</div>
+
+			<div class="blog-contents">
+				<div class="col-md-4 content-topic">
+					<img src="img/badian.jpg" class="image">  
+					<div class="middle">
+					    <div class="text">Badian</div>
+					 </div>
+				</div>
+
+				<div class="col-md-4 content-topic">
+					<img src="img/kampo.jpg" class="image">  
+					<div class="middle">
+					    <div class="text">KampoJuan</div>
+					 </div>
+				</div>
+				<div class="col-md-4 div-last">
+					
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4 div-last">
+					
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4 div-last">
+					
+				</div>
+			</div>
+
+		</div>
+	</div>		
+	
+</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="jscripts/masterslider/jquery.easing.min.js"></script>
+    <script src="jscripts/masterslider/jquery.min.js"></script>
+    <script src="jscripts/masterslider/masterslider.min.js"></script>
+    <script type="text/javascript" src="jscripts/coundown-timer.js"></script>
+    <script type="text/javascript" src="jscripts/jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).load(function(){
+		 $('.blog-contents .col-md-4').find('img').each(function(){
+		  var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+		  $(this).addClass(imgClass);
+		 })
+		})
+    </script>
+
+</html>
