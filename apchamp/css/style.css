@@ -32,6 +32,11 @@ a.navbar-brand {
 div#navbar {
     background-color: transparent;
 }
+.navbar-default.scrolled {
+    background-color: #edd0d7 !important;
+    border-color: #edd0d7 !important;
+    height: 121px;
+}
 .navbar-default .navbar-nav>li>a{
     color: #000;
     font-weight: bold;
@@ -155,4 +160,14 @@ button.read-button{
   font-size: 55px;
   font-weight: bold;
 /*  padding: 16px 32px;*/
+}
+.content-gallery{
+    margin-bottom: 270px;
+}
+.email-slogan{
+    font-size: 30px;
+    margin-top: 100px;
+}
+.email-slogan span{
+    font-weight: bold;
 }

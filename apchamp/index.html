@@ -62,7 +62,7 @@
 		</div>
 	</div>
 	<div class="container-fluid bg-content">
-		<div class="container">
+		<div class="container content-gallery">
 			<div class="blog">
 				<h1>blogs</h1>
 				<div class="square-h1"></div>
@@ -82,31 +82,66 @@
 					    <div class="text">KampoJuan</div>
 					 </div>
 				</div>
-				<div class="col-md-4 div-last">
-					
+				<div class="col-md-4 div-last content-topic">
+					<img src="img/sugbo.jpg" class="image">  
+					<div class="middle">
+					    <div class="text">Sugbo Mercado</div>
+					 </div>
 				</div>
-				<div class="col-md-4">
-					
+				<div class="col-md-4 content-topic">
+					<img src="img/eden.jpg" class="image">  
+					<div class="middle">
+					 	<div class="text">Eden Solace</div>
+					</div>
 				</div>
-				<div class="col-md-4">
-					
+				<div class="col-md-4 content-topic">
+					<img src="img/boracay.jpg" class="image">  
+					<div class="middle">
+					 	<div class="text">Boracay</div>
+					</div>
 				</div>
-				<div class="col-md-4 div-last">
-					
+				<div class="col-md-4 div-last content-topic">
+					<img src="img/sirao.jpg" class="image">  
+					<div class="middle">
+					 	<div class="text">Sirao Peak</div>
+					</div>
+				</div>					
+				<div class="col-md-4 content-topic">
+					<img src="img/kawasan.jpg" class="image">  
+					<div class="middle">
+					 	<div class="text">Kawasan Falls</div>
+					</div>					
 				</div>
-				<div class="col-md-4">
-					
+				<div class="col-md-4 content-topic">
+					<img src="img/osmena.jpg" class="image">  
+					<div class="middle">
+					 	<div class="text">Osmena Peak</div>
+					</div>					
 				</div>
-				<div class="col-md-4">
-					
-				</div>
-				<div class="col-md-4 div-last">
-					
+				<div class="col-md-4 div-last content-topic">
+					<img src="img/cs.jpg" class="image">  
+					<div class="middle">
+					 	<div class="text">My CS Journey</div>
+					</div>					
 				</div>
 			</div>
 
 		</div>
-	</div>		
+	</div>	
+	<div class="container">
+		<div class="blog">
+			<h1>Stay Connected</h1>
+				<div class="square-h1"></div>
+		</div>
+	</div>	
+	<div class="container">
+		<div class="col-md-9 email-slogan">
+			<p>Open for collaboration. You may contact me through: <span>info@apchamp.com</span></p>
+		</div>
+		<div class="col-md-3">
+			<img src="img/mail-icon.png">
+		</div>
+	</div>
 	
 </body>
     <!-- Bootstrap core JavaScript
@@ -131,6 +166,14 @@
 		  $(this).addClass(imgClass);
 		 })
 		})
+    </script>
+    <script type="text/javascript">
+		$(function () {
+		  $(document).scroll(function () {
+		    var $nav = $(".navbar-default");
+		    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+		  });
+		});
     </script>
 
 </html>
