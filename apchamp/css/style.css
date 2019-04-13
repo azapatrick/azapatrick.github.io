@@ -97,7 +97,7 @@ button.read-button{
     width: 348px;
     height:348px;
     margin-right: 48px;
-    border: 2px solid black;
+/*    border: 2px solid black;*/
     margin-top: 50px;
 }
 .col-md-4.div-last{
@@ -120,9 +120,6 @@ button.read-button{
     height: auto;
 }
 
-.col-md-4 img:hover{
-
-}
 .blog-contents .col-md-4 {
     padding: 0px;
 }
