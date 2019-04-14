@@ -172,3 +172,9 @@ button.read-button{
     background-image: url(../img/bg-footer.png); 
     height: 836px;
 }
+.container.footer-content{
+    padding-top: 410px;
+}
+hr{
+    margin-top: 143px;
+}
