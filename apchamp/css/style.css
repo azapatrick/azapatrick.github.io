@@ -168,3 +168,7 @@ button.read-button{
 .email-slogan span{
     font-weight: bold;
 }
+.footer-area{
+    background-image: url(../img/bg-footer.png); 
+    height: 836px;
+}
